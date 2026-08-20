@@ -125,7 +125,7 @@ task dev
 自动完成：① 拉起 Docker 依赖（已运行则跳过）→ ② 在宿主机启动后端开发服务器（热重载）。
 
 - API 文档： <http://127.0.0.1:8000/docs>
-- OpenAPI JSON： <http://127.0.0.1:8000/openapi.json>
+- OpenAPI JSON： <http://127.0.0.1:8000/openapi>
 
 修改代码后服务器自动重启；按 `Ctrl+C` 停止开发环境。
 
