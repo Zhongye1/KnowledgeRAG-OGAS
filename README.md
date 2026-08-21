@@ -150,6 +150,7 @@ task dev
 | 命令 | 说明 |
 | --- | --- |
 | `task init` | 一键初始化（依赖安装 → 容器 → 建表 → 种子数据） |
+| `task env:check` | 校验各层 env 账号字段一致性 |
 | `task build` / `task docker-build` | 构建安装包 / Docker 镜像 |
 | `task dev` | 一键启动本地开发环境（依赖 + 后端） |
 | `task backend:dev` | 单独启动后端（热重载，端口 8000） |
