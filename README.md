@@ -200,28 +200,6 @@ task backend:export           # 导出 requirements.txt
 
 ---
 
-## 常见问题
-
-**`task: command not found`**
-按「快速开始」第 2 节安装 Task CLI。
-
-**`docker: permission denied` 或无法连接 Docker daemon**
-启动 Docker（Docker Desktop，或 Linux 下 `systemctl start docker`），确认当前用户已加入 `docker` 用户组。
-
-**`task deps-status` 显示容器未 healthy**
-健康检查需要数秒，稍等重试；仍失败可 `task deps-logs` 查看容器日志。
-
-**后端启动报数据库 / Redis 连接超时**
-确认依赖容器 healthy；检查 `backend/src/.env` 中 `DATABASE_HOST`、`REDIS_HOST`、`CELERY_RABBITMQ_HOST` 为 `localhost`，端口与上表一致。
-
-**端口 8000 被占用**
-修改 `backend/Taskfile.yml` 中 `backend:dev` 的 `--port`，或结束占用进程。
-
-**前端工程尚未迁移**
-`frontend:dev` 目前为占位任务，暂无需启动前端即可使用后端 API。
-
----
-
 ## License
 
 MIT
