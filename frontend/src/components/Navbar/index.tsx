@@ -9,19 +9,11 @@ const NAV_LINKS = [
   { label: '作者主页', href: 'https://github.com/Zhongye1' },
 ] as const;
 
-<<<<<<<< Updated upstream:frontend/src/features/auth/components/login-page-header.tsx
-export function LoginPageHeader() {
-  return (
-    <header
-      aria-label="顶部导航"
-      className="flex h-[80px] items-center justify-between border-b border-color-border-1 bg-color-bg-2 px-6"
-========
 export function NavBar() {
   return (
     <header
       aria-label="顶部导航"
       className="sticky top-0 z-50 flex h-16 items-center justify-between border-b border-color-border-5 px-6 backdrop-blur-sm"
->>>>>>>> Stashed changes:frontend/src/components/Navbar/index.tsx
     >
       {/* Logo */}
       <a href="/" className="flex items-center gap-2 text-lg font-black">
