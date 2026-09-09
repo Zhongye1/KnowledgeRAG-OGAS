@@ -31,7 +31,7 @@ RAG-F 是一套面向个人与团队的智能知识管理平台，通过将私�
 - 🗺️ **可观测性** — 内置 Loki / Prometheus / Tempo / Grafana 监控栈
 - 🚀 **本地优先** — 数据不出本机，私有化部署
 
-> 技术栈：FastAPI + SQLAlchemy + Celery + PostgreSQL + Redis + RabbitMQ（后端）；Vue 3 + TypeScript（前端，待迁移）。
+> 技术栈：FastAPI + SQLAlchemy + Celery + PostgreSQL + Redis + RabbitMQ（后端）；React 19 + TypeScript + Vite（前端）。
 
 ---
 
@@ -172,7 +172,7 @@ task dev
 ├── backend/            # FastAPI 后端（包、配置、插件、迁移）
 │   ├── src/.env        # 本地开发环境变量
 │   └── Taskfile.yml    # 后端任务
-├── frontend/           # Vue 3 前端（待迁移）
+├── frontend/           # React 19 前端（Vite + shadcn/ui）
 ├── deploy/             # Docker 部署配置（Compose / Nginx / 监控）
 ├── docker-compose.yml  # 依赖与全量服务编排
 ├── docs/               # VitePress 文档站
